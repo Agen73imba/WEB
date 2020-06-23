@@ -43,16 +43,30 @@
     <br>
     <br>
     <br>
-    <p><h3><li>Tag <u>"br"</u> makes you a new blank line.</li></h3></p>
+    <p><h3><li>The <u>＜br＞</u> tag inserts a single line break.</li></h3></p>
+    <p>The ＜br＞ tag is useful for writing addresses or poems.
+    The ＜br＞ tag is an empty tag which means that it has no end tag.</p>
+    <p><strong>Note:</strong> Use the ＜br＞ tag to enter line breaks, not to add space between paragraphs.</p>
     <br>
     <br>
     <br>
-    <p><h3><li>Tag <u>"img"</u> cannot be defined by itself, therefore more information has to be specified which is called the ATTRIBUTE.</li> </h3></p>
-    Attributes such as width="n%" or src="coding.jpg" have to come after the img tag.
+    <p><h3><li>The <u>＜img＞</u> tag is used to embed an image in an HTML page.</li></h3></p>
+    <p>Images are not technically inserted into a web page; images are linked to web pages. The ＜img＞ tag creates a holding space for the referenced image.</p>
+    <p>The ＜img＞ tag has two required attributes:</p>
+    <ul><li>src - Specifies the path to the image</li>
+    <li>alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed</li></ul>
+    <p><strong>Note:</strong> Also, always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loads.</p>
+    ex)
+    <ul><li>＜img src="HTML.jpg" alt="HyperTech Markup Language" width="42" height="42"＞</li>
+    <li>＜img src="HTML.jpg" alt="HyperTech Markup Language" width="100%"＞</li></ul>
+    <p><strong>Tip:</strong> To link an image to another document, simply nest the ＜img＞ tag inside an ＜a＞ tag (see example below).</p>
+    ex)
+    <ul><li>＜a href="https://www.Simba.com"＞＜img src="Lionking.png" alt="King of the jungle" width="100%"＞＜/a＞</li></ul>
+
     <br>
     <br>
     <br>
-    <p><h3><li>Tag <u>"li"</u> stands for list, and this tag usually comes with parent tags such as "ol"(ordered list) and "ul"(unordered list).</li></h3></p>
+    <p><h3><li>The <u>＜li＞</u> tag stands for list, and this tag usually comes with parent tags such as "ol"(ordered list) and "ul"(unordered list).</li></h3></p>
     <ol>
         <li>This is "ol" one.</li>
         <li>This is "ol" two.</li>
@@ -66,19 +80,62 @@
     <br>
     <br>
     <br>
-    <p><h3><li>Tag <u>"title</u> gives you a title for your web. This actually matters bec the search engines we use pick this tag as the most important info of your web page such as a book title.</li></h3></p>
+    <p><h3><li>The <u>＜title＞</u> tag defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.</li></h3></p>
+        <p>The ＜title＞ tag is required in HTML documents!</p>
+        <p>The contents of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results.
+        <p>The ＜title＞ element:</p>
+        <ul><li>defines a title in the browser toolbar</li>
+        <li>provides a title for the page when it is added to favorites</li>
+        <li>displays a title for the page in search-engine results</li></ul>
+        <p>Here are some <strong>tips for creating "good titles":</strong></p>
+        <ul><li>Go for a longer, descriptive title (avoid one- or two-word titles)</li>
+        <li>Search engines will display about 50-60 characters of the title, so try not to have titles longer than that</li>
+        <li>Do not use just a list of words as the title (this may reduce the page's position in search results)</li></ul>
+        <p>So, try to make the title as accurate and meaningful as possible!</p>
+        <br>
+        <p>Note: You can NOT have more than one ＜title＞ element in an HTML document.</p>
+        
     <br>
     <br>
     <br>
-    <p><h3><li>Tag <u>"head"</u> and <u>"body"</u> differentiates your page.</li></h3></p>
+    <p><h3><li>The <u>＜head＞</u> element is a container for metadata (data about data) and is placed between the ＜html＞ tag and the ＜body＞ tag.</li></h3></p>
+        <p>Metadata is data about the HTML document. Metadata is not displayed.</p>
+        <p>Metadata typically define the document title, character set, styles, scripts, and other meta information.</p>
+        <p>The following elements can go inside the ＜head＞ element:
+        
+            <ul><li>＜title＞ (required in every HTML document)</li>
+            <li>＜style＞</li>
+            <li>＜base＞</li>
+            <li>＜link＞</li>
+            <li>＜meta＞</li>
+            <li>＜script＞</li>
+            <li>＜noscript＞</li></ul></p>
     <br>
     <br>
     <br>
-    <p><h3><li>Tag <u>"meta charset=utf-8" orders computer to open this doc w/ a utf-8 code.(kr language)</u></li></h3></p>
+    <p><h3><li>The <u>＜body＞</u> tag defines the document's body.</li></h3></p>
+    <p>The ＜body＞ element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</p>
+    <p><strong>Note:</strong> There can only be one ＜body＞ element in an HTML document.</p>
     <br>
     <br>
     <br>
-    <p><h3><li>Tag <u>"a"</u> links a text to another web.</li></h3></p>
-    ex) [a] href="www.?.com" target="_blank" title="?" [/a]
+    <p><h3><li>The <u>＜meta＞</u> tag defines metadata about an HTML document. Metadata is data (information) about data.</li></h3></p>
+    <p>＜meta＞ tags always go inside the ＜head＞ element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.</p>
+    <p>Metadata will not be displayed on the page, but is machine parsable.</p>
+    <p>Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.</p>
+    ex) ＜meta charset=utf-8＞ orders the browser to visualize this html by kr language.
+    <br>
+    <br>
+    <br>
+    <p><h3><li>The <u>＜a＞</u> tag defines a hyperlink, which is used to link from one page to another.</li></h3></p>
+    <p>The most important attribute of the "a" element is the href attribute, which indicates the link's destination.</p>
+    <p>By default, links will appear as follows in all browsers:
+        <ul><li>An unvisited link is underlined and blue</li>
+        <li>A visited link is underlined and purple</li>
+        <li>An active link is underlined and red</li></ul></p>
+    ex) ＜a href="www.?.com" target="_blank" title="?"＞ ? ＜/a＞
+    <br>
+    <br>
+    <br>
 </body>
 </html>

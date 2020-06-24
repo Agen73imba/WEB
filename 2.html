@@ -3,24 +3,7 @@
 <head>
     <title>WEB - CSS</title>
     <meta charset="utf-8">
-    <style>
-        a {
-            text-decoration:none; 
-            color:black;
-        }
-
-        a:visited {
-            color:gray;
-        }
-        a:active {
-            color:red
-        }
-
-        h1 {
-            font-size:60px;text-align:center;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 <p><!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170458040-1"></script>
@@ -35,14 +18,122 @@
 
 </head>
 <body>
-    <h1><a href="index.html" style="color:black">WEB</a></h1>
+    <div id="headline"> <h1> <a href="index.html" style="color:black">WEB</a></h1> </div>
+    <div id="grid">
+        <div id="list">
     <ol>
         <li><a href="1.html">HTML</a></li>
         <li><a href="2.html" style="color:red;text-decoration:underline">CSS</a></li>
         <li><a href="3.html">JavaScript</a></li>
     </ol>
+        </div>
+    <div id="article">
         <h2>CSS</h2>
-        <p><strong><u><a href="https://ko.wikipedia.org/wiki/%EC%A2%85%EC%86%8D%ED%98%95_%EC%8B%9C%ED%8A%B8" target="_blank" title="definition of CSS">Cascading Style Sheets (CSS)</a></u></strong> is a style sheet language used for <strong>describing the presentation of a document</strong> <u>written in a markup language</u> like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
-        <img src="CSS.jpg" width=75%>
+            <p><strong><u><a href="https://ko.wikipedia.org/wiki/%EC%A2%85%EC%86%8D%ED%98%95_%EC%8B%9C%ED%8A%B8" target="_blank" title="definition of CSS">Cascading Style Sheets (CSS)</a></u></strong> is a style sheet language used for <strong>describing the presentation of a document</strong> <u>written in a markup language</u> like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+            <img src="CSS.jpg" width=75%>
+    <hr>
+        <h3>CSS rule-set</h3>
+            <p>
+                A CSS rule-set consists of a selector and a declaration block:
+                <br>
+                <br>
+                <img src="CSS_rule-set.gif" width=65%><br>
+                <br>
+                The selector points to the HTML element you want to style.<br>
+                The declaration block contains one or more declarations separated by <strong>; semicolons</strong>.<br>
+                Each declaration includes a CSS property name and a value, separatied by a <strong>: colon</strong>.<br>
+                Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by <strong>{curly braces}</strong>.
+            </p>
+    <hr>
+        <h3>Inserting CSS to HTML</h3>
+            <p>
+                There are three ways of inserting a style sheet:<br>
+                <ul>
+                    <li>External CSS</li>
+                    <li>Internal CSS</li>
+                    <li>Inline CSS</li>
+                </ul>
+            </p>
+        <br>
+            <ol>
+            <h4><li>External CSS</li></h4>
+                <p>
+                    With an external style sheet, you can change the look of an entire website by changing just one file. Each HTML page must include a reference to the external style sheet file inside the <strong>＜link＞</strong> element, inside the head section.<br>
+                    <br>
+                    ex)＜link rel="stylesheet" href="style.css"＞
+                </p>
+            <h4><li>Internal CSS</li></h4>
+                <p>
+                    An internal style sheet may be used if one single HTML page has a unique style. The internal style is defined inside the <strong>＜style＞</strong> element, inside the head section.<br>
+                    <br>
+                    ex) ＜style＞<br>
+                    h1 {color: blue; margin: 10px;} <br>＜/style＞
+                </p>
+            <h4><li>Inline CSS</li></h4>
+                <p>
+                    An inline syle may be used to apply a unique style for a single element. To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.<br>
+                    <br>
+                    ex) ＜h1 style="color: blue; text-align: center;＞ This is h1.＜/h1＞
+                </p>
+            </ol>
+    <hr>
+        <h3>CSS Comments</h3>
+            <p>
+                Comments are used to explain the code, and may help when you deit the source code at a later date. These comments are ignored by browsers.<br>
+                <br>
+                A CSS commnt is placed inside the <strong>＜style＞</strong>element, and starts with <strong>/*</strong> and ends with <strong>*/</strong>.<br>
+                <br>
+                You can add comments to your HTML source by using the <strong>＜!--comment--＞</strong>.
+            </p>
+    <hr>
+        <h3>CSS Colors</h3>
+            <p>
+                Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values. In CSS, a color can be specified by using a color name. Also you can set the background/text color for HTML elements:<br>
+                <br>
+                <div style="background-color: mediumseagreen; text-align:center; color:white; padding: 12px; font-size:24px;">This is MediumSeaGreen color.</div><br>
+                <div style="background-color: mintcream; border-left: 5px solid steelblue; color:steelblue; padding:10px;  font-size:18px;">You can set your text, background, border color of your HTML by using prenamed colors or color values.</div>
+    <hr>
+        <h3>CSS Borders, Margins, Paddings</h3>
+            <p>
+                The CSS <strong>border</strong> properties allow you to specify the style, width, and color of an element's border.<br>
+                <div style="border: 1px solid black; padding: 10px;">I have borders on all sides.</div><br>
+                <div style="border-bottom: 1px solid red; padding:10px;">I have a red bottom border.</div><br>
+                <div style="border: 1px solid green; border-radius: 10px ; padding:10px;">I have rounded borders.</div><br>
+                <div style="border-left:5px solid royalblue; background-color: skyblue; padding:10px;">I have a blue left border.</div><br>
+                <br>
+                These are the properties of the style of a border.<br>
+                <p style="border: 5px dotted gray; padding:10px;">This is a dotted border.</p>
+                <p style="border: 5px dashed gray; padding: 10px;">This is a dashed border.</p>
+                <p style="border: 5px solid gray; padding: 10px;">This is a solid border.</p>
+                <p style="border: 5px double gray; padding: 10px;">This is a double border.</p>
+                <p style="border: 5px groove gray; padding: 10px;">This is a groove border.</p>
+                <p style="border: 5px ridge gray; padding: 10px;">This is a ridge border.</p>
+                <p style="border: 5px inset gray; padding: 10px;">This is a inset border.</p>
+                <p style="border: 5px outset gray; padding: 10px;">This is a outset border.</p>
+                <p style="border-bottom: 5px solid gray; border-top: 5px solid gray; border-left: 5px double gray; border-right: 5px double gray; padding: 10px;">This is a mixed border.</p>
+            </p>
+            <p>
+                The CSS <strong>margin</strong> properties are used to create space around elements, outside of any defined borders. With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element(top,bottom,right,left).
+            </p>
+            <p>
+                The CSS <strong>padding</strong> properties are used to generate space around an element's content, inside of any defined borders. With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).
+            </p>
+    <hr>
+        <h3>CSS Box model</h3>
+            <p>
+                All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.<br>
+                <br>
+                The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.<br>
+                <br>
+                <img src="CSS_Box_model.jpg" width="85%">
+            </p>
+    <hr>
+        <h3>CSS Media Queries</h3>
+            <p>
+
+            </p>
+    <hr>
+        </div>
+    </div>
 </body>
 </html>

@@ -19,6 +19,26 @@
 </head>
 <body>
     <div id="headline"><h1><a href="index.html" style="color:black;text-decoration:underline">WEB</a></h1> </div>
+
+    <!-- Underneath are the day&night buttons which didn't work alone.
+        Need to try it again later!-->
+
+    <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
+    if(this.value === 'night'){
+        target.style.backgroundColor='black';
+        target.style.color='white';
+        document.querySelector('a').style.color='white';
+        this.value = 'day';
+        } else {
+        target.style.backgroundColor='white';
+        target.style.color='black';
+        document.querySelector('a').style.color='black';
+        this.value = 'night';
+        }
+    ">
+
+
     <div id="grid">
         <div id="list">
         <ol>

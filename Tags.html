@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML - Tags</title>
+    <link rel="stylesheet"; href="style.css">
+</head>
+<body>
+    <div id="headline"><h1><a href="index.html">WEB</a></h1></div>
+    <div id="grid">
+        <div id="list">
+            <ol>
+                <li>
+                    <a href="1.html">HTML</a>
+                        <ul>
+                            <li><a href="Tags.HTML" style="color:red; text-decoration:underline">Tags</a></li>
+                            <li><a href="Attributes.HTML">Attributes</a></li>
+                        </ul>
+                </li>
+                <li><a href="2.html">CSS</a></li>
+                <li><a href="3.html">JavaScript</a></li>
+            </ol>
+        </div>
+        <div id="article">
+            <h2>Tags</h2>
+            <p><a href="https://ko.wikipedia.org/wiki/HTML_%EC%9A%94%EC%86%8C" target="_blank" title="Tags?">Tags</a>, so called as 'elements' are the basic units forming the HTML document.</p>
+            <img src="Tags.jpg" width="75%">
+        <hr>
+            <p><h3><li>Tag <u>"u"</u> stands for Underline.</li></h3></p>
+            <u>Underline your texts with the tag "u"</u>
+        <hr>
+            <p><h3><li>Tag <u>"h1~6"</u> stands for Headlines.</li></h3></p>
+            <h1>This is tag "h1".</h1>
+            <h2>This is tag "h2".</h2>
+            <h3>This is tag "h3".</h3>
+            <h4>This is tag "h4".</h4>
+            <h5>This is tag "h5".</h5>
+            <h6>This is tag "h6".</h6>
+        <hr>
+            <p><h3><li>Tag <u>"strong"</u> highlights your words.</li></h3></p>
+            <strong>HIGHLIGHT</strong> your words by tagging the <strong>"strong"</strong> tag.
+        <hr>
+            <p><h3><li>Tag <u>"p"</u> stands for paragraphs, and this makes you discipline your lines to paragraphs.</li></h3></p>
+            <p>This is some text in a paragraph.</p>
+            <p>This is another text in a paragraph.</p>
+        <hr>
+            <p><h3><li>The <u>＜br＞</u> tag inserts a single line break.</li></h3></p>
+            <p>The ＜br＞ tag is useful for writing addresses or poems.
+            The ＜br＞ tag is an empty tag which means that it has no end tag.</p>
+            <p><strong>Note:</strong> Use the ＜br＞ tag to enter line breaks, not to add space between paragraphs.</p>
+        <hr>
+            <p><h3><li>The <u>＜img＞</u> tag is used to embed an image in an HTML page.</li></h3></p>
+            <p>Images are not technically inserted into a web page; images are linked to web pages. The ＜img＞ tag creates a holding space for the referenced image.</p>
+            <p>The ＜img＞ tag has two required attributes:</p>
+            <ul class="article"><li>src - Specifies the path to the image</li>
+            <li>alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed</li></ul>
+            <p><strong>Note:</strong> Also, always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loads.</p>
+            ex)
+            <ul class="article"><li>＜img src="HTML.jpg" alt="HyperTech Markup Language" width="42" height="42"＞</li>
+            <li>＜img src="HTML.jpg" alt="HyperTech Markup Language" width="100%"＞</li></ul>
+            <p><strong>Tip:</strong> To link an image to another document, simply nest the ＜img＞ tag inside an ＜a＞ tag (see example below).</p>
+            ex)
+            <ul class="article"><li>＜a href="https://www.Simba.com"＞＜img src="Lionking.png" alt="King of the jungle" width="100%"＞＜/a＞</li></ul>
+        <hr>
+            <p><h3><li>The <u>＜li＞</u> tag stands for list, and this tag usually comes with parent tags such as "ol"(ordered list) and "ul"(unordered list).</li></h3></p>
+            <ol class="article">
+                <li>This is "ol" one.</li>
+                <li>This is "ol" two.</li>
+                <li>This is "ol" three.</li>
+            </ol>
+            <ul class="article">
+                <li>This is "ul" one.</li>
+                <li>This is "ul" two.</li>
+                <li>This is "ul" three.</li>
+            </ul>
+        <hr>
+            <p><h3><li>The <u>＜title＞</u> tag defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.</li></h3></p>
+                <p>The ＜title＞ tag is required in HTML documents!</p>
+                <p>The contents of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results.
+                <p>The ＜title＞ element:</p>
+                <ul class="article"><li>defines a title in the browser toolbar</li>
+                <li>provides a title for the page when it is added to favorites</li>
+                <li>displays a title for the page in search-engine results</li></ul>
+                <p>Here are some <strong>tips for creating "good titles":</strong></p>
+                <ul class="article"><li>Go for a longer, descriptive title (avoid one- or two-word titles)</li>
+                <li>Search engines will display about 50-60 characters of the title, so try not to have titles longer than that</li>
+                <li>Do not use just a list of words as the title (this may reduce the page's position in search results)</li></ul>
+                <p>So, try to make the title as accurate and meaningful as possible!</p>
+                <br>
+                <p>Note: You can NOT have more than one ＜title＞ element in an HTML document.</p>
+        <hr>
+            <p><h3><li>The <u>＜head＞</u> element is a container for metadata (data about data) and is placed between the ＜html＞ tag and the ＜body＞ tag.</li></h3></p>
+                <p>Metadata is data about the HTML document. Metadata is not displayed.</p>
+                <p>Metadata typically define the document title, character set, styles, scripts, and other meta information.</p>
+                <p>The following elements can go inside the ＜head＞ element:
+                
+                    <ul class="article"><li>＜title＞ (required in every HTML document)</li>
+                    <li>＜style＞</li>
+                    <li>＜base＞</li>
+                    <li>＜link＞</li>
+                    <li>＜meta＞</li>
+                    <li>＜script＞</li>
+                    <li>＜noscript＞</li></ul></p>
+        <hr>
+            <p><h3><li>The <u>＜body＞</u> tag defines the document's body.</li></h3></p>
+            <p>The ＜body＞ element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</p>
+            <p><strong>Note:</strong> There can only be one ＜body＞ element in an HTML document.</p>
+        <hr>
+            <p><h3><li>The <u>＜meta＞</u> tag defines metadata about an HTML document. Metadata is data (information) about data.</li></h3></p>
+            <p>＜meta＞ tags always go inside the ＜head＞ element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.</p>
+            <p>Metadata will not be displayed on the page, but is machine parsable.</p>
+            <p>Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.</p>
+            ex) ＜meta charset=utf-8＞ orders the browser to visualize this html by kr language.
+        <hr>
+            <p><h3><li>The <u>＜a＞</u> tag defines a hyperlink, which is used to link from one page to another.</li></h3></p>
+            <p>The most important attribute of the "a" element is the href attribute, which indicates the link's destination.</p>
+            <p>By default, links will appear as follows in all browsers:
+                <ul class="article"><li>An unvisited link is underlined and blue</li>
+                <li>A visited link is underlined and purple</li>
+                <li>An active link is underlined and red</li></ul></p>
+            ex) ＜a href="www.?.com" target="_blank" title="?"＞ ? ＜/a＞
+        <hr>
+                </div>
+                </div>
+
+</body>
+</html>

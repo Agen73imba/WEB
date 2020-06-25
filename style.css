@@ -1,5 +1,44 @@
 body {
-    margin:0;
+    margin: 0; 
+    line-height: 1.4;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    padding-left:0px;
+}
+
+ul {
+    padding-left:10px;
+}
+
+ul.article{
+    padding-left: 25px;
+}
+
+ol {
+    padding-left:10px;
+}
+
+ol.article{
+    padding-left: 25px;
+}
+
+div.textbox {
+    padding:20px;
+    width:100%;
+    border: 3px solid teal;
+    border-radius: 5px 20px;
+}
+
+table.table {
+    width:100%;
+    margin: 20px 0;
+    border: 1px solid gray;
 }
 
 hr {
@@ -11,18 +50,18 @@ hr {
 
 }
 
-a {
-    text-decoration:none; 
-    color:black;
+a:link {
+    text-decoration: none;
 }
 
-a:visited {
-    color:gray;
+a:hover {
+    text-decoration:underline;
 }
 
 a:active {
     color:red
 }
+
 
 #headline {
     font-size:30px;

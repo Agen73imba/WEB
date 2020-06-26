@@ -56,10 +56,26 @@ span.highlight {
 }
 
 table.table {
+
     width:100%;
-    margin: 20px 0;
-    border: 1px solid gray;
+    border-collapse: collapse;
+    vertical-align: middle;
 }
+
+table.table td, th{
+border: 3px solid white;
+text-align: left;
+padding:7px;
+}
+
+table.table tr:nth-child(odd) {
+background-color: whitesmoke;    
+}
+
+table.table th{
+    background-color: lightgray;
+}
+
 
 hr {
     margin:100px;

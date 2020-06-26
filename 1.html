@@ -41,25 +41,25 @@
 <hr>
     <p><h3><li>HTML Page Structure </li></h3></p>
         <p>Below is a visualization of an HTML page structure:</p>
-            <p><div style="width:99%; border: 1px solid gray; padding: 3px; margin:0; background-color: lightgray;">
+            <p><div style="width:99%; border: 2px solid gray; border-radius:5px; padding: 10px; margin:0; background-color: lightgray;">
                 &lt;html&gt;
-                    <div style="width:90%; border:1px solid gray; padding:5px; margin:20px;">
+                    <div style="width:90%; border:2px solid gray; border-radius:5px; padding:10px; margin:20px;">
                         &lt;head&gt;
-                            <div style="width:90%; border:1px solid gray; padding:5px; margin:20px;">
+                            <div style="width:90%; border:2px solid gray; border-radius:5px; padding:10px; margin:20px;">
                             &lt;title&gt;Page title&lt;/title&gt;
                             </div>
                         &lt;/head&gt;
                     </div>
-                    <div style="width: 90%; border:1px solid gray; padding:5px; margin:20px;">
+                    <div style="width: 90%; border:2px solid gray; border-radius:5px; padding:10px; margin:20px;">
                         &lt;body&gt;
-                            <div style="width: 90%; border: 1px solid gray; padding: 5px; margin:20px; background-color: white;">
-                                <div style="width: 90%; border:1px solid gray;padding:5px;margin:20px;">
+                            <div style="width: 90%; border: 2px solid gray; border-radius:5px; padding: 10px; margin:20px; background-color: white;">
+                                <div style="width: 90%; border:2px solid gray;border-radius:5px; padding:10px;margin:20px;">
                                     &lt;h1&gt; This is a heading.&lt;/h1&gt;
                                 </div>
-                                <div style="width: 90%; border:1px solid gray;padding:5px;margin:20px;">
+                                <div style="width: 90%; border:2px solid gray;border-radius:5px; padding:10px;margin:20px;">
                                     &lt;p&gt; This is a paragraph.&lt;/p&gt;
                                 </div>
-                                <div style="width: 90%; border:1px solid gray;padding:5px;margin:20px;">
+                                <div style="width: 90%; border:2px solid gray;border-radius:5px; padding:10px;margin:20px;">
                                     &lt;p&gt; This is another paragraph.&lt;/p&gt;
                                 </div>
                             </div>
@@ -98,7 +98,7 @@
             <ul class="article"><li>These are some main Language codes.</li></ul>
             <table class="table" style="text-align: center;">
                 <tr>
-                    <th>Language</th>
+                    <th style="width:50%;">Language</th>
                     <th>Code</th>
                 </tr>
                 <tr>
@@ -149,7 +149,7 @@
                     <ul class="article"><li>These are some main Country codes.</li></ul>
                     <table class="table" style="text-align: center;">
                         <tr>
-                            <th>Country</th>
+                            <th style="width:50%;">Country</th>
                             <th>Code</th>
                         </tr>
                         <tr>
@@ -278,7 +278,46 @@
                 <input type="text" disabled=""><br>
             </div>
 <hr>
+    <p><h3><li>Special Characters</li></h3></p>
+        <p>In HTML, the characters <span class="highlight"><strong>&lt;, &gt;, ", ' and &</strong></span> are special characters. They are parts of the HTML syntax itself. So how do you include one of these special characters in your text? For example, if you want to use an ampersand or less-than sign, and not have it interpreted as code.</p>
 
+        <p>You do this with character references. These are special codes that represent characters, to be used in these exact circumstances. Each character reference <strong>starts with an ampersand (&), and ends with a semicolon (;)</strong>.</p>
+
+        <table class="table" style="text-align: center;">
+            <tr>
+                <th>Literal character</th>
+                <th>Character reference equivalent
+                </th>
+            </tr>
+            <tr>
+                <td>&lt;</td>
+                <td>&amp;lt;</td>
+            </tr>
+            <tr>
+                <td>&gt;</td>
+                <td>&amp;gt;</td>
+            </tr>
+            <tr>
+                <td>&quot;</td>
+                <td>&amp;quot;</td>
+            </tr>
+            <tr>
+                <td>&apos;</td>
+                <td>&amp;apos;</td>
+            </tr>
+            <tr>
+                <td>&amp;</td>
+                <td>&amp;amp;</td>
+            </tr>
+        </table>
+<hr>
+    <p><h3><li>HTML Comments</li></h3></p>
+        <p>HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively making comments invisible to the user. The purpose of comments is to allow you to include notes in the code to explain your logic or coding. This is very useful if you return to a code base after being away for long enough that you don't completely remember it. Likewise, comments are invaluable as different people are making changes and updates.</p>
+            <p>To write an HTML comment, wrap it in the special markers <span class="highlight"><strong>&lt;!-- and --&gt;</strong></span>. For example:</p>
+            <p><div class="textbox">
+                <p></p>&lt;p&gt; I'm not inside a comment&lt;/p&gt;</p>
+                <p style="color:darkgray;">&lt;&excl;-- &lt;p&gt; I am! &lt;/p&gt; --&gt;</p>
+            </div></p>
 <hr>
         </div>
         </div>

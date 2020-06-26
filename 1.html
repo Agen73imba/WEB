@@ -4,7 +4,6 @@
     <title>WEB - HTML</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-
 <p><!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170458040-1"></script>
     <script>
@@ -15,8 +14,8 @@
       gtag('config', 'UA-170458040-1');
     </script>
     </p>
-
 </head>
+
 <body>
     <div id="headline"><h1><a href="index.html">WEB</a></h1></div>
     <div id="grid">
@@ -35,8 +34,40 @@
         </div>
     <div id="article">
     <h2>HTML</h2>
-    <p><a href="https://ko.wikipedia.org/wiki/HTML" target="_blank" title="definition of HTML">Hypertext Markup Languag(HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.</p>
+    <p><a href="https://ko.wikipedia.org/wiki/HTML" target="_blank" title="definition of HTML">Hypertext Markup Languag(HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Basically, HTML describes the structure of a web page consisting a series of elements. These elements tell the browser how to display the content.</p>
     <img src="coding.jpg" width="75%">
+<hr>
+    <p><h3><li>HTML Page Structure </li></h3></p>
+        <p>Below is a visualization of an HTML page structure:</p>
+            <p><div style="width:99%; border: 1px solid gray; padding: 3px; margin:0; background-color: lightgray;">
+                &lt;html&gt;
+                    <div style="width:90%; border:1px solid gray; padding:5px; margin:20px;">
+                        &lt;head&gt;
+                            <div style="width:90%; border:1px solid gray; padding:5px; margin:20px;">
+                            &lt;title&gt;Page title&lt;/title&gt;
+                            </div>
+                        &lt;/head&gt;
+                    </div>
+                    <div style="width: 90%; border:1px solid gray; padding:5px; margin:20px;">
+                        &lt;body&gt;
+                            <div style="width: 90%; border: 1px solid gray; padding: 5px; margin:20px; background-color: white;">
+                                <div style="width: 90%; border:1px solid gray;padding:5px;margin:20px;">
+                                    &lt;h1&gt; This is a heading.&lt;/h1&gt;
+                                </div>
+                                <div style="width: 90%; border:1px solid gray;padding:5px;margin:20px;">
+                                    &lt;p&gt; This is a paragraph.&lt;/p&gt;
+                                </div>
+                                <div style="width: 90%; border:1px solid gray;padding:5px;margin:20px;">
+                                    &lt;p&gt; This is another paragraph.&lt;/p&gt;
+                                </div>
+                            </div>
+                        &lt;/body&gt;
+                    </div>
+                &lt;/html&gt;
+            </div>
+        </p>
+        <P><strong>Note:</strong> Only the content inside the &lt;body&gt; section (the white area above) will be displayed in a browser.</P>
+    
 <hr>
     <p><h3><li>The HTML &lt;!DOCTYPE&gt; </li></h3></p>
         <p>All HTML documents must start with a &lt;!DOCTYPE&gt; declaration.<br>
@@ -152,12 +183,41 @@
                 </p>
             </p>
 <hr>
-    <p><h3><li>The HTML Language & Country Codes</li></h3></p>
-
+    <p><h3><li>Meta Data</li></h3></p>
+        <p>To ensure proper interpretation and correct search engine indexing, both the language and the character encoding should be defined as early as possible in an HTML doc.</p>
+            <p><div class="textbox">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html lang="ko-KR"&gt;<br>
+                &lt;head&gt;<br>
+                &nbsp; &lt;meta charset="UTF-8&gt;<br>
+                &nbsp; &lt;title&gt; Welcome &lt;/title&gt;<br>
+                &lt;/head&gt;
+            </div></p>
 <hr>
-
+    <p><h3><li>Viewport</li></h3></p>
+        <p>The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.</p>
+        <p>This gives the browser instructions on how to control the page's dimensions and scaling.</p>
+        <p><div class="textbox">
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        </div></p>
+        <p>The <strong>width=device-width</strong> part sets the width of the page to follow the screen sidth of the device which will vary depending on the device.</p>
+        <p>The <strong>initial-scale=1.0</strong> part sets the initial zoom level when the page is first loaded by the browser.</p>
+        <p>These are two different web pages w/ and w/out the viewport.</p>
+<hr>
+    <p><h3><li>HTML Elements ( ≒<a href="Tags.html" title="Tag reference">Tags</a> )</li></h3></p>
+            <p>An HTML element is defined by a start tag, some content, and an end tag. Element is everything from the start tag to the end tag.</p>
+            <p><div class="textbox">
+                &lt;tag&gt; content &lt;/tag&gt;
+            </div></p>
+        <p><h4><ul class="article"><li>Nested HTML Elements</li></ul></h4></p>
+            <p>HTML elements can be nested(means that elemts can contain other elements).<br>All HTML documents consist of nested HTML elements.</p>
+        <p><h4><ul class="article"><li>Empty HTML Elements</li></ul></h4></p>
+            <p>HTML elements with no content are called empty elements.<br>The &lt;br&gt; tag defines a line break, and is an empty element with no closing tag.</p>
+            <div class="textbox">This is a <br>paragraph with a line break.</div>
+<hr>
 
         </div>
         </div>
 </body>
+
 </html>

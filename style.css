@@ -14,6 +14,7 @@ li {
 
 li.article{
     padding-left: 20px;
+    margin-left: 5px;
 }
 
 ul {
@@ -22,6 +23,7 @@ ul {
 
 ul.article{
     padding-left: 20px;
+    margin-left: 5px;
 }
 
 ol {
@@ -30,6 +32,7 @@ ol {
 
 ol.article{
     padding-left: 20px;
+    margin-left: 5px;
 }
 
 div.textbox {
@@ -48,6 +51,10 @@ div.textbox0 {
     font-size: 18px;
 }
 
+span.highlight {
+    background-color: greenyellow;
+}
+
 table.table {
     width:100%;
     margin: 20px 0;
@@ -56,7 +63,7 @@ table.table {
 
 hr {
     margin:100px;
-    width:100%;
+    width:10%;
     margin-left:auto;
     margin-right:auto;
     border: 1px solid rgb(235, 235, 235);

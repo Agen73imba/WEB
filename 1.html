@@ -4,6 +4,8 @@
     <title>WEB - HTML</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pokeball.ico" type="image/x-icon">
+
 <p><!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170458040-1"></script>
     <script>
@@ -24,8 +26,8 @@
                 <li>
                     <a href="1.html" style="color:red; text-decoration:underline">HTML</a>
                         <ul>
-                            <li><a href="Tags.HTML">Tags</a></li>
-                            <li><a href="Attributes.HTML">Attributes</a></li>
+                            <li><a href="Tags.HTML">Tags & Attributes</a></li>
+                            <!--<li><a href="Attributes.HTML">Attributes</a></li>-->
                         </ul>
                 </li>
                 <li><a href="2.html">CSS</a></li>
@@ -67,7 +69,10 @@
             </div>
         </p>
         <P><strong>Note:</strong> Only the content inside the &lt;body&gt; section (the white area above) will be displayed in a browser.</P>
-    
+<hr>
+    <p><h3><li>HTML &lt;head&gt; & &lt;body&gt;</li></h3></p>
+        <p>The <strong>head</strong> of an HTML document is the part that is not displayed in the web browser when the page is loaded. It <strong>contains information</strong> such as the page &lt;title&gt;, links to CSS (if you choose to style your HTML content with CSS), links to custom favicons, and other metadata (data about the HTML, such as the author, and important keywords that describe the document.).</p>
+        <p>The <strong>body</strong> of an HTML document is the part that is displayed in the web browser. There can be only one &lt;body&gt; element in a document.</p>
 <hr>
     <p><h3><li>The HTML &lt;!DOCTYPE&gt; </li></h3></p>
         <p>All HTML documents must start with a &lt;!DOCTYPE&gt; declaration.<br>
@@ -200,10 +205,34 @@
         <p><div class="textbox">
             &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
         </div></p>
-        <p>The <strong>width=device-width</strong> part sets the width of the page to follow the screen sidth of the device which will vary depending on the device.</p>
-        <p>The <strong>initial-scale=1.0</strong> part sets the initial zoom level when the page is first loaded by the browser.</p>
-        <p>These are two different web pages w/ and w/out the viewport.</p>
+        <p>The <strong>width=device-width</strong> part sets the width of the page to follow the screen sidth of the device which will vary depending on the device(width of the screen in CSS pixels at a scale of 100%).There are corresponding height and device-height values, which may be useful for pages with elements that change size or position based on the viewport height.</p>
+        <p>The <strong>initial-scale=1.0</strong> part sets the initial zoom level when the page is first loaded by the browser. The "maximum-scale", "minimum-scale", and "user-scalable" properties control how users are allowed to zoom the page in or out(Usage of user-scalable=no can cause accessibility issues to users with visual impairements such as low vision.</p>
 <hr>
+    <p><h3><li>Adding custom icons to your site</li></h3></p>
+        <p>To further inrich your site design, you can add references to custom icons in your metadata, and these will be displayed in certain contexts. The most commonly used of these is the <strong>favicon</strong>(short for "favorites icon", referring to its use in the "favorites" or "bookmarks" lists in browsers).</p>
+        <p> A favicon can be added to your page by:</p>
+        <ol class="article">
+            <p><li>Savind it in the same directory as the site's index page, saved in <strong>.ico</strong> format(most browsers will support favicons in more common formats like <strong>.gif / .png</strong>, but using the ICO format will ensure it works as far back as IE6.).</li></p>
+            <p><li>Adding the following line into your HTML's &lt;head&gt; block to reference it:</li></p>
+        </ol>
+        <div class="textbox"> &lt;Link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;</div>
+<hr>
+    <p><h3><li>Applying CSS/JS to HTML</li></h3></p>
+        Most of the websites you use employ CSS to make them look good, and JavaScript(JS) to power interactive functionally, such as video players, maps, games, and more. These are most commonly applied to a web page using the &lt;link&gt; element and the &lt;script&gt; element, respectively.
+            <ul class="article">
+                <p><li>The &lt;link&gt; element should always go inside the head of your doc. THis takes two attributes, <strong>rel="stylesheet"</strong>, which indicates that it is the doc's stylesheet, and <strong>href</strong> which contains the path to the stylesheet file:</li></p>
+            </ul>
+            <div class="textbox">
+                &lt;link rel="stylesheet" href="style.css&gt;
+            </div>
+            <ul class="article"><li>
+                The &lt;script&gt; element should also go into the head, and should include a <strong>src</strong> attribute containing the path to the JS you want to load, and <strong>defer</strong>, which basically instructs the browser to load the JS at the same time as the page's HTML. This is useful as it makes sure that the HTML is all loaded before the JS runs, so that you don't get errors resulting from JS trying to access an HTML element that doesn't exist on the page yet.
+            </li></ul>
+            <div class="textbox">
+                &lt;script src="JavaScript.js" defer&gt;&lt;/script &gt;
+            </div>
+            <p><strong>Note:</strong> The &lt;script&gt; element may look like an empty element, but it's not, and so needs a closing tag. Instead of pointing to an external script file, you can also choose to put your script inside the &lt;script&gt; element.</p>
+            <hr>
     <p><h3><li>HTML Elements ( ≒<a href="Tags.html" title="Tag reference">Tags</a> )</li></h3></p>
             <p>An HTML element is defined by a start tag, some content, and an end tag. Element is everything from the start tag to the end tag.</p>
             <p><div class="textbox">
@@ -215,7 +244,42 @@
             <p>HTML elements with no content are called empty elements.<br>The &lt;br&gt; tag defines a line break, and is an empty element with no closing tag.</p>
             <div class="textbox">This is a <br>paragraph with a line break.</div>
 <hr>
+    <p><h3><li>Block or Inline?</li></h3></p>
+        <p>There are two importatnt categories of elements to know in HTML: block-level elements and inline elements.</p>
+        <p><ul class="article">
+            <li><p><strong>Block-level elements</strong> form a visible block on a page.A block-level element appears on a new line following the content that precedes it. Any content that follows a block-level element also appears on a new line. Block-level elements are usually structural elements on the page. For example, a block-level element might represent paragraphs, lists, navigation menus, or footers. A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.</p></li>
+            <li><p><strong>Inline elements</strong> are contained within block-level elements, and surround only small parts of the document’s content. (not entire paragraphs or groupings of content) An inline element will not cause a new line to appear in the document. It is typically used with text. For example, as an &lt;a&gt; element (hyperlink) or emphasis elements such as &lt;em&gt; or &lt;strong&gt;.</p></li>
+        </ul></p>
+<hr>
+    <p><h3><li>Attributes</li></h3></p>
+        <p>Elements can also have attributes. Attributes looks like this:</p>
+        <div class="textbox">
+        &lt;p <u><strong>class="comments"</strong></u>&gt; Meet the king Simba.&lt;/p&gt;<br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &#8593; Attribute
+        </div>
+        <p>Attributes contain extra information about the element that won't appear in the content. In this example, the <strong>class</strong> attribute is an identifying name used to target the element with style information.</p>
+        <p>An attribute should have:</p>
+        <ul class="article" style="list-style: none;";";>
+            <li><p>A space between it and the element name.(For an element with more than one attribute, the attributes should be separated by spaces too.)</p></li>
+            <li><p>The attribute name, followed by an equal sign.</p></li>
+            <li><p>An attribute vlaue, wrapped with opening and closing quote marks.</p></li>
+        </ul>
+        <p><h4><li>Boolean attributes</li></h4></p>
+            <p>Sometimes you will see attributes written without values. This is entirely acceptable. These are called Boolean attributes. Boolean attributes can only have one value, which is generally the same as the attribute name. For example, consider the <span class="highlight">disabled</span> attribute, which you can assign to form input elements. (You use this to disable the form input elements so the user can't make entries. The disabled elements typically have a grayed-out appearance.) For example:</p>
+            <div class="textbox">
+                &lt;input type="text" <strong>disabled</strong>&gt;&lt;br&gt;<br>
+                &lt;input type="text" <strong>disabled="disabled"</strong>&gt;&lt;br&gt;<br>
+                &lt;input type="text" <strong>disabled=""</strong>&gt;&lt;br&gt;<br>
+            </div>
+            <p>Three examples abobe make the same results as below.</p>
+            <div class="textbox">
+                <input type="text" disabled><br>
+                <input type="text" disabled="disabled"><br>
+                <input type="text" disabled=""><br>
+            </div>
+<hr>
 
+<hr>
         </div>
         </div>
 </body>
